@@ -1,0 +1,84 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  height: 80px;
+}
+
+nav {
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+.logo {
+  float: right;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Sezione cerca */
+#cerca {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+#cerca form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cerca label {
+  margin-right: 10px;
+  width: 100px;
+}
+
+#cerca input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+#cerca button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Sezione
