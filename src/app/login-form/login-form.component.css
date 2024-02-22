@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width: 30%;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 90px;
+}
+
+.btn-primary{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: #25bad7 !important;
+    font-size: 1.4em !important;
+}.btn-primary:hover{
+    font-size: 1.6em !important;
+    transition: 1s;
+}.btn-primary:not(:hover){
+    font-size: 1.4em !important;
+    transition: 1s;
+}
+
+.form-control{
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    font-size: 0.8em;
+}
+
+h4{
+    font-size: 2em !important;
+    font-weight: 700;
+    color: #25bad7 !important;
+}
+
+.form-label{
+    font-size: 1.2em !important;
+    color: #25bad7 !important;
+}
+
+.form-text{
+    color: #de282f !important;
+}
+
+@media screen and (max-width: 1100px){
+    form{
+        width: 60% !important;
+    }
+}
