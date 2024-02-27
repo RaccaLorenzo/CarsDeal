@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from "./navbar/navbar.component";
+import { Component } from '@angular/core'; 
+import { RouterOutlet } from '@angular/router'; 
+import { NavbarComponent } from "./navbar/navbar.component"; 
 import { LoginFormComponent } from './login-form/login-form.component';
-
-@Component({
-    selector: 'app-root',
-    standalone: true,
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavbarComponent, LoginFormComponent]
-})
-export class AppComponent {
-  title = 'CarsDeal';
-}
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+ 
+@Component({ 
+    selector: 'app-root', 
+    standalone: true, 
+    templateUrl: './app.component.html', 
+    styleUrl: './app.component.css', 
+    imports: [
+              RouterOutlet,
+              NavbarComponent,
+              LoginFormComponent,
+              RegistrationFormComponent, 
+            ]
+})  
+export class AppComponent { 
+  title = 'CarsDeal'; 
+} 
