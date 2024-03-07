@@ -9,9 +9,6 @@ import { Router } from '@angular/router';
   styleUrl: './registration-form.component.css'
 })
 export class RegistrationFormComponent {
-  constructor(private router : Router){}
 
-  redirectAccesso(){
-    this.router.navigate(['']);
-  }
+  
 } 

@@ -48,6 +48,9 @@ h4{
     color: #de282f !important;
 }
 
+#emailHelp{
+    color: #ff5 !important;
+}
 @media screen and (max-width: 1100px){
     form{
         width: 60% !important;

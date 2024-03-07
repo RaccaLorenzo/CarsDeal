@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" (click)="redirectHome()">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Chi Siamo</a>
@@ -22,7 +22,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Acquista Auto</a></li>
             <li><a class="dropdown-item" href="#">Vendi Auto</a></li>
-            <li><a class="dropdown-item" href="#">Loggati qui</a></li>
+            <li><a class="dropdown-item" (click)="redirectLogin()">Loggati qui</a></li>
           </ul>
         </li>
         <li class="nav-item">
