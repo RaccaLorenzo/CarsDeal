@@ -1,0 +1,70 @@
+<div class="bg-dark p-1 m-5 mt-4 rounded-5 text-center " id="form">
+    <form class="text-center">
+        <h4 class="text-center text-light mt-2">Cerca</h4>
+        <div class="form-row"> <!-- Modified -->
+            <div class="m-3 d-flex justify-content-center">
+                <div class="form-group col-md-4 m-2">
+                    <label for="marca" class="text-light">Marca</label>
+                    <input type="text" class="form-control" id="marca" placeholder="Inserisci la marca">
+                </div>
+                <div class="form-group col-md-4 m-2">
+                    <label for="modello" class="text-light">Modello</label>
+                    <input type="text" class="form-control" id="modello" placeholder="Inserisci il modello">
+                </div>
+            </div>
+            <div class="m-3 d-flex justify-content-center">
+                <div class="form-group col-md-4 m-2">
+                    <label for="annoDa" class="text-light">Anno immatricolazione (da)</label>
+                    <input type="number" class="form-control" id="annoDa" placeholder="Da" min="1900" max="2024">
+                </div>
+                <div class="form-group col-md-4 m-2">
+                    <label for="annoA" class="text-light">Anno immatricolazione (a)</label>
+                    <input type="number" class="form-control" id="annoA" placeholder="A" min="1900" max="2024">
+                </div>
+            </div>
+        </div>
+        <div class="form-row "> <!-- Modified -->
+            <div class="m-3 d-flex justify-content-center">
+                <div class="form-group col-md-4 m-2">
+                    <label for="alimentazione" class="text-light">Tipo alimentazione</label>
+                    <select class="form-control" id="alimentazione">
+                        <option value="">Seleziona il tipo di alimentazione</option>
+                        <option value="benzina">Benzina</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="ibrida">Ibrida</option>
+                        <option value="elettrica">Elettrica</option>
+                    </select>
+                </div>
+                
+                <div class="form-group col-md-4 m-2">
+                    <label for="classeEmissioni" class="text-light">Classe emissioni</label>
+                    <select class="form-control" id="classeEmissioni">
+                        <option value="">Seleziona la classe emissioni</option>
+                        <option value="Euro 1">Euro 1</option>
+                        <option value="Euro 2">Euro 2</option>
+                        <option value="Euro 3">Euro 3</option>
+                        <option value="Euro 4">Euro 4</option>
+                        <option value="Euro 5">Euro 5</option>
+                        <option value="Euro 6">Euro 6</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-3 m-2">
+                    <label for="potenza" class="text-light">Potenza (CV)</label>
+                    <input type="number" class="form-control" id="potenza" placeholder="Inserisci la potenza">
+                </div>
+            </div>
+        </div>
+        <div class="form-row ">
+            <div class="m-3 d-flex justify-content-center">
+                
+                <div class="form-group col-md-4 m-2">
+                    <label for="chilometraggio" class="text-light">Chilometraggio</label>
+                    <input type="number" class="form-control" id="chilometraggio" placeholder="Inserisci il chilometraggio">
+                </div>
+            </div>
+        </div>
+        <!-- Aggiunta prezzo da / a ---------- Altri campi della ricerca -->
+        <button type="submit" class="btn btn-primary mt-1 m-2">Cerca</button>
+    </form>
+</div>
