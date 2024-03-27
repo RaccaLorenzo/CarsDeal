@@ -13,14 +13,26 @@ export class NavbarComponent {
   constructor(router: Router) {
     this.router = router; // Assign the injected router parameter to the class property.
   }
+
   redirectLogin() {
   this.router.navigate(['/login']);
   console.log('redirectLogin');
   }
+
   redirectHome() {
     this.router.navigate(['']);
     console.log('redirectHome');
-    }
+  }
+
+  redirectRicerca(){
+    this.router.navigate(['/ricerca']);
+    console.log("Reindirizzamento a ricerca effettuato con successo");
+  }
+
+  redirectReferenze(){
+    this.router.navigate(['/referenze']);
+    console.log("Reindirizzamento a referenze effettuato con successo");
+  }
 }
 
 

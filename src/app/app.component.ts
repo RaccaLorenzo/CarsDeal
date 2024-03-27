@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component"; 
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
  
 @Component({ 
     selector: 'app-root', 
@@ -13,7 +14,8 @@ import { RegistrationFormComponent } from './registration-form/registration-form
               RouterOutlet,
               NavbarComponent,
               LoginFormComponent,
-              RegistrationFormComponent, 
+              RegistrationFormComponent,
+              FontAwesomeModule 
             ]
 })  
 export class AppComponent { 

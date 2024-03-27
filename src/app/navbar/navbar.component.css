@@ -2,3 +2,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+#navbarLogin {
+    position: relative;
+    margin-right: 0;
+}
