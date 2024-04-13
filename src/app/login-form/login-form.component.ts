@@ -10,9 +10,10 @@ import { Router } from '@angular/router';
 })
 export class LoginFormComponent {
 
-  url : string = 'http://10.0.100.153:3000/';
+  url : string = 'http://127.0.0.1:3000/';
   router: Router;
-  pwd: string = '';
+  email: string = '';
+  
   constructor(router: Router, ) {
     this.router = router; // Assign the injected router parameter to the class property.
   }
@@ -23,18 +24,20 @@ export class LoginFormComponent {
   }
 
   login() {
+    const _email = (<HTMLInputElement>document.getElementById('txtEmail')).value;
+    const _password = (<HTMLInputElement>document.getElementById('txtPassword')).value;
     fetch(`${this.url}login`, {
       method: 'POST',
       body: JSON.stringify({
-        email: ``,
-        password: ``
+        email: _email,
+        password: _password
       }),
       headers: {
         'Content-Type': 'application/json'
       }
     })
       .then((response: any) => {
-        console.log(response.data);
+        console.log('Client: ' + response.data);
       })
       .catch((error: any) => {
         console.error(error);

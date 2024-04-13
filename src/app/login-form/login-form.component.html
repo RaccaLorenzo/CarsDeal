@@ -3,12 +3,12 @@
         <h4 class="text-center text-light">Accedi</h4>
         <div class="mb-3 mt-3">
             <label for="exampleInputEmail1" class="form-label text-light">Email</label>
-            <input type="email" class="form-control bg-dark text-light" #email aria-describedby="emailHelp">
+            <input type="email" id="txtEmail" class="form-control bg-dark text-light" #email aria-describedby="emailHelp">
 
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label text-light">Password</label>
-            <input type="password" class="form-control bg-dark text-light" >
+            <input type="password" id="txtPassword" class="form-control bg-dark text-light" >
             <div id="emailHelp" class="form-text mt-3 text-light">Hai dimenticato la password?</div>
         </div>
         <div id="emailHelp" class="mt-3"><a (click)="redirectRegistrazione()">Registrati</a></div>
