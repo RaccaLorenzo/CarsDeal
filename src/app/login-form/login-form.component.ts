@@ -12,7 +12,6 @@ export class LoginFormComponent {
 
   url : string = 'http://127.0.0.1:3000/';
   router: Router;
-  email: string = '';
   
   constructor(router: Router, ) {
     this.router = router; // Assign the injected router parameter to the class property.

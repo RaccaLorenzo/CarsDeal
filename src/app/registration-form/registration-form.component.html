@@ -3,21 +3,21 @@
         <h4 class="text-center text-light">Registrati</h4>
         <div class="mb-3 mt-3">
             <label for="exampleInputEmail1" class="form-label text-light">Nome</label>
-            <input type="text" class="form-control bg-dark text-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control bg-dark text-light" id="txtName" aria-describedby="emailHelp">
         </div>
         <div class="mb-3 mt-3">
             <label for="exampleInputEmail1" class="form-label text-light">Cognome</label>
-            <input type="text" class="form-control bg-dark text-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control bg-dark text-light" id="txtSurname" aria-describedby="emailHelp">
         </div>
         <div class="mb-3 mt-3">
             <label for="exampleInputEmail1" class="form-label text-light">Email</label>
-            <input type="email" class="form-control bg-dark text-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control bg-dark text-light" id="txtEmail" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label text-light">Password</label>
-            <input type="password" class="form-control bg-dark text-light" id="exampleInputPassword1">
+            <input type="password" class="form-control bg-dark text-light" id="txtPassword">
             <div id="emailHelp" class="form-text mt-3">Non condivideremo mai la tua password</div>
         </div>
-        <button type="submit" class="btn btn-primary mt-4 p-2">Registrati</button>
+        <button type="submit" class="btn btn-primary mt-4 p-2" (click)="register()">Registrati</button>
     </form>
   </div>
