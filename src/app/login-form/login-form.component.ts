@@ -25,6 +25,7 @@ export class LoginFormComponent {
   login() {
     const _email = (<HTMLInputElement>document.getElementById('txtEmail')).value;
     const _password = (<HTMLInputElement>document.getElementById('txtPassword')).value;
+    console.log("Login");
     fetch(`${this.url}login`, {
       method: 'POST',
       body: JSON.stringify({
@@ -36,7 +37,12 @@ export class LoginFormComponent {
       }
     })
       .then((response: any) => {
-        console.log('Client: ' + response.data);
+        if (response.status === 200) {
+          console.log("Login effettuato con successo");
+          this.router.navigate(['/home']);
+        } else {
+          console.log("Errore durante il login");
+        }
       })
       .catch((error: any) => {
         console.error(error);

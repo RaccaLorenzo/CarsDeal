@@ -20,6 +20,7 @@ export class RegistrationFormComponent {
     const _password = (<HTMLInputElement>document.getElementById('txtPassword')).value;
     const _name = (<HTMLInputElement>document.getElementById('txtName')).value;
     const _surname = (<HTMLInputElement>document.getElementById('txtSurname')).value;
+    console.log("Registrazione");
     fetch(`${this.url}register`, {
       method: 'POST',
       body: JSON.stringify({
