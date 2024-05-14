@@ -40,6 +40,7 @@ export class LoginFormComponent {
         if (response.status === 200) {
           console.log("Login effettuato con successo");
           this.router.navigate(['/home']);
+          console.log(response)
         } else {
           console.log("Errore durante il login");
         }

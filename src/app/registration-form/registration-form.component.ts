@@ -33,8 +33,8 @@ export class RegistrationFormComponent {
         'Content-Type': 'application/json'
       }
     })
-      .then((response: any) => {
-        console.log('Client: ' + response.data);
+      .then(async (response: Response) => {
+        console.log(await response.text());
       })
       .catch((error: any) => {
         console.error(error);
